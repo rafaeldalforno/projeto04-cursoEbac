@@ -1,0 +1,49 @@
+@use 'variaveis';
+
+.hero {
+  padding: 5.6vw;
+  min-height: 80vh;
+  background-image: url('../images/hero_throne.jpg');
+  text-align: center;
+
+  &__content {
+    max-width: 640px;
+
+    img{
+      max-width: 320px;
+      margin: 50px auto 28px;
+    }
+
+    p{
+      margin-bottom: 10px;
+    }
+
+    &__combos {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+
+      &__combo {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          max-height: 100px;
+        }
+
+        button {
+          display: block;
+          width: 80%;
+          height: 60px;
+          font-size: 18px;
+          color: variaveis.$corTextoSecundario;
+          background-color: #6421ff;
+          text-transform: uppercase;
+          border-radius: 5px;
+          border: none;        }
+      }
+    }
+  }
+}
