@@ -1,0 +1,27 @@
+.footer{
+  &__container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__logo{
+    width: 100px;
+    margin: 0 auto 10px;
+  }
+
+  &__links{
+    margin-bottom: 16px;
+
+    .color_white{
+      color: #fff;
+    }
+    
+    &__item{
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+}
